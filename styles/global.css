@@ -65,6 +65,7 @@ form > div {
     width: 100%;
     min-height: 160px;
     margin-top: 8px;
+    padding: 15px;
     border-radius: 8px;
     border: 1px solid var(--grey-900);
     resize: none;
