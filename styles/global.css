@@ -1,0 +1,123 @@
+:root {
+    --green-200: hsl(148, 38%, 91%);
+    --green-600: hsl(169, 82%, 27%);
+    --red: hsl(0, 66%, 54%);
+    --white: hsl(0, 0%, 100%);
+    --grey-500: hsl(186, 15%, 59%);
+    --grey-900: hsl(187, 24%, 22%);
+}
+body {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: var(--green-200);
+}
+
+main {
+    width: 85%;
+    background-color: var(--white);
+    margin: 24px 0;
+    padding: 12px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form > div {
+    display: flex;
+    flex-direction: column;
+}
+
+.div-label{
+    display: flex;
+    flex-direction: column;
+}
+
+.label {
+    width: 100%;
+    font-weight: 400;
+    font-size: 20px;
+    color: var(--grey-900);
+    margin-top: 12px;   
+}
+
+.input {
+    width: 100%;
+    height: 48px;
+    margin-top: 8px;
+    border: 1px solid var(--grey-900);
+    border-radius: 8px;
+    padding: 0 8px;
+}
+
+.input ::placeholder {
+    font-size: 16px;
+    color: var(--green-600);
+}
+
+#message {
+    width: 100%;
+    min-height: 160px;
+    margin-top: 8px;
+    border-radius: 8px;
+    border: 1px solid var(--grey-900);
+    resize: none;
+}
+
+#term-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 4px;
+    margin-top: 16px;
+}
+
+#label-term {
+    font-size: 12px;
+    margin-top: 0;
+}
+
+#btn {
+    width: 100;
+    height: 48px;
+    margin-top: 16px;
+    background-color: var(--green-600);
+    color: var(--white);
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 16px;
+    transition: .3s ease-in-out;
+}
+
+#btn:hover {
+    background-color: green;
+}
+
+@media screen and (min-width: 768px) {
+    form > div {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    form > div > div {
+        width: 48.5%;
+    }
+}
+
+@media screen and (min-width: 960px) {
+    body {
+        height: 100vh;
+        align-items: center;
+    }
+    main {
+        width: 45%;
+    }
+
+}
