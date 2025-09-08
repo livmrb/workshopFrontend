@@ -15,6 +15,6 @@ Acesse o projeto publicado aqui:
 
  ## Tecnologias Utilizadas
  - **HTML5** - estrutura e semântica do formulário.
- - **CSS3** - estilos,grid/flexbox e responsividade.
+ - **CSS3** - estilos, grid/flexbox e responsividade.
 
 
